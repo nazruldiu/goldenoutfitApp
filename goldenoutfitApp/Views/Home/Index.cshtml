@@ -1,8 +1,370 @@
 ﻿@{
     ViewData["Title"] = "Home Page";
 }
+<style>
+    .values-section {
+        background-color: #0a2c55; /* dark blue background */
+        color: #f8f9fa;
+        padding: 50px 20px;
+    }
 
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+        .values-section h2 {
+            text-align: center;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .values-section .divider {
+            width: 80px;
+            height: 4px;
+            background: #fff;
+            margin: 0 auto 30px auto;
+        }
+
+        .values-section p strong {
+            color: #f1f1f1;
+        }
+
+    .values-list p {
+        margin-bottom: 15px;
+        line-height: 1.6;
+    }
+
+    .values-list span {
+        font-weight: bold;
+    }
+
+    /* Custom colors for numbers */
+    .values-list .num-1 {
+        color: #4db8ff;
+    }
+
+    .values-list .num-2 {
+        color: #ff944d;
+    }
+
+    .values-list .num-3 {
+        color: #ff6666;
+    }
+
+    .values-list .num-4 {
+        color: #ffcc00;
+    }
+
+    .values-list .num-5 {
+        color: #66cc66;
+    }
+
+    .values-list .num-6 {
+        color: #cc99ff;
+    }
+
+    .values-list .num-7 {
+        color: #00e6e6;
+    }
+
+    .about__text {
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+
+    .about__text {
+        padding-left: 20px;
+        padding-top: 20px;
+    }
+
+    .about__text ul li {
+        list-style: none;
+        font-size: 20px;
+        color: #fff;
+        line-height: 50px;
+    }
+</style>
+<div id="carouselExampleDark" class="carousel carousel-dark slide" style="margin-top: 82px;">
+    <div class="carousel-indicators">
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="1" aria-label="Slide 2"></button>
+        <button type="button" data-bs-target="#carouselExampleDark" data-bs-slide-to="2" aria-label="Slide 3"></button>
+    </div>
+    <div class="carousel-inner" style="height: 100%; overflow: hidden;">
+        <div class="carousel-item active" data-bs-interval="10000">
+            <div style="position: relative; height: 100%;">
+                <img src="~/images/carousel/ca-2.jpg" class="d-block w-100 h-100" style="object-fit: cover; filter: brightness(60%);" alt="...">
+                <div class="carousel-caption" style="color: #f8f9fa;">
+                    <div class="d-none d-md-block">
+                        <h5>Golden Outfit Corner</h5>
+                        <p>We offering a wide range of uniform services.</p>
+                        <a class="btn btn-outline-light btn-lg" href="https://wa.me/971522244964" target="_blank">
+                            Contact Us
+                        </a>
+                    </div>
+
+                    <!-- Mobile content -->
+                    <div class="d-block d-md-none">
+                        <p class="small-heading">Golden Outfit Corner</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item" data-bs-interval="2000">
+            <div style="position: relative; height: 100%;">
+                <img src="~/images/carousel/ca-1.jpeg" class="d-block w-100 h-100" style="object-fit: cover; filter: brightness(60%);" alt="...">
+                <div class="carousel-caption" style="color: #f8f9fa;">
+                    <div class="d-none d-md-block">
+                        <h5>Golden Outfit Corner</h5>
+                        <p>We offering a wide range of uniform services.</p>
+                        <a class="btn btn-outline-light btn-lg" href="https://wa.me/971522244964" target="_blank">
+                            Contact Us
+                        </a>
+                    </div>
+
+                    <!-- Mobile content -->
+                    <div class="d-block d-md-none">
+                        <p class="small-heading">Golden Outfit Corner</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="carousel-item">
+            <div style="position: relative; height: 100%;">
+                <img src="~/images/carousel/ca-3.jpeg" class="d-block w-100 h-100" style="object-fit: cover; filter: brightness(60%);" alt="...">
+                <div class="carousel-caption" style="color: #f8f9fa;">
+                    <div class="d-none d-md-block">
+                        <h5>Golden Outfit Corner</h5>
+                        <p>We offering a wide range of uniform services.</p>
+                        <a class="btn btn-outline-light btn-lg" href="https://wa.me/971522244964" target="_blank">
+                            Contact Us
+                        </a>
+                    </div>
+
+                    <!-- Mobile content -->
+                    <div class="d-block d-md-none">
+                        <p class="small-heading">Golden Outfit Corner</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="prev">
+        <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Previous</span>
+    </button>
+    <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleDark" data-bs-slide="next">
+        <span class="carousel-control-next-icon" aria-hidden="true"></span>
+        <span class="visually-hidden">Next</span>
+    </button>
 </div>
+
+<div class="container p-5 text-center">
+    <h1 class="mb-3" style="font-weight: 700; color: #152B55;">GOLDEN OUTFIT CORNER</h1>
+</div>
+
+<div class="row">
+    <div class="col-md-6" style="background-color: #152B55">
+        <div class="text-center" style="color: #fff">
+            <h1>Welcome</h1>
+            <p>
+                Welcome to GOLDEN OUTFIT CORNER, your premier destination for high-quality uniforms in Dubai, Sharjah - U.A.E.
+            </p>
+            <p>
+                We offering a wide range of uniform services, including
+                security guard uniforms, school uniforms, and commercial
+                uniforms, can be a lucrative and versatile business
+            </p>
+            <p>
+                Our team of experienced designers and tailors work closely
+                with clients to create custom uniforms that meet their
+                specific needs and requirements. We use only the highest
+                quality materials and fabrics to ensure that our uniforms
+                are durable, comfortable, and long-lasting.
+            </p>
+        </div>
+    </div>
+    <div class="col-md-6">
+        <img src="~/images/homepage.jpg" alt="Homepage Image" class="img-fluid" />
+    </div>
+</div>
+
+<div class="row mt-5" id="our_values">
+    <section class="values-section">
+        <h2>OUR VALUES</h2>
+        <div class="divider"></div>
+
+        <div class="row align-items-center">
+            <!-- Left image -->
+            <div class="col-md-4 text-center mb-4 mb-md-0">
+                <img src="~/images/value_01.jpg" alt="Values" class="img-fluid rounded shadow">
+            </div>
+
+            <!-- Right content -->
+            <div class="col-md-8">
+                <p><strong>Golden Outfit Corner</strong> has seven behaviors that guide the way we work:</p>
+
+                <div class="values-list">
+                    <p><span class="num-1">1-Quality:</span> Providing high-quality clothing that meets customer expectations and lasts for a long time.</p>
+                    <p><span class="num-2">2-Style:</span> Offering fashionable and trendy clothing that appeals to a wide range of customers.</p>
+                    <p><span class="num-3">3-Customer Satisfaction:</span> Ensuring that customers have a positive shopping experience and are happy with their purchases.</p>
+                    <p><span class="num-4">4-Diversity and Inclusion:</span> Carrying a range of sizes and styles that cater to diverse body types and personal styles.</p>
+                    <p><span class="num-5">5-Sustainability:</span> Making an effort to use environmentally friendly materials and production methods, and to minimize waste.</p>
+                    <p><span class="num-6">6-Affordability:</span> Providing clothing that is reasonably priced and accessible to a wide range of customers.</p>
+                    <p><span class="num-7">7-Innovation:</span> Continuously seeking out new and creative ways to design, produce and sell clothing.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+</div>
+<div class="container p-5 text-center">
+    <h1 class="mb-3" style="font-weight: 700; color: #152B55;">OUR SERVICES</h1>
+</div>
+
+<div class="row">
+    <div class="col-md-4" style="background-color: #152B55;">
+        <div class="about__text">
+            <ul>
+                <li><i class="fa fa-check-circle"></i> Security Uniforms </li>
+                <li><i class="fa fa-check-circle"></i> Hotels Uniforms</li>
+                <li><i class="fa fa-check-circle"></i> Hospitals Uniforms</li>
+                <li><i class="fa fa-check-circle"></i> School Uniforms</li>
+                <li><i class="fa fa-check-circle"></i> Saloon Uniforms</li>
+                <li><i class="fa fa-check-circle"></i> Office Staff Uniforms</li>
+            </ul>
+            <a class="btn btn-primary py-md-2 px-md-3 btn-lg" style="color: #fff; margin-left: 42px !important;" href="/ContactUs"><i class="fa fa-check-circle"></i> Contact US</a>
+        </div>
+    </div>
+    <div class="col-md-8">
+        <img src="~/images/services.jpg" alt="OUR SERVICES" class="img-fluid" />
+    </div>
+</div>
+
+<div class="container p-5 text-center" id="our_clients">
+    <h1 class="mb-3" style="font-weight: 700; color: #152B55;">OUR VALUABLE CLIENTS</h1>
+</div>
+<div class="row row-cols-3 row-cols-md-6 g-4">
+    <div class="col">
+        <div class="card h-100">
+            <img src="~/images/clients/client-1.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                @* <h5 class="card-title text-center">Dubai Safari Park</h5> *@
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card h-100">
+            <img src="~/images/clients/client-2.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title"></h5>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card h-100">
+            <img src="~/images/clients/client-3.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title"></h5>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card h-100">
+            <img src="~/images/clients/client-4.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title"></h5>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card h-100">
+            <img src="~/images/clients/client-5.svg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title"></h5>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card h-100">
+            <img src="~/images/clients/client-6.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title"></h5>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card h-100">
+            <img src="~/images/clients/client-7.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title"></h5>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card h-100">
+            <img src="~/images/clients/client-8.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title"></h5>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card h-100">
+            <img src="~/images/clients/client-9.png" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title"></h5>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card h-100">
+            <img src="~/images/clients/client-10.jpg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title"></h5>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card h-100">
+            <img src="~/images/clients/client-5.svg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title"></h5>
+            </div>
+        </div>
+    </div>
+    <div class="col">
+        <div class="card h-100">
+            <img src="~/images/clients/client-6.jpeg" class="card-img-top" alt="...">
+            <div class="card-body">
+                <h5 class="card-title"></h5>
+            </div>
+        </div>
+    </div>
+</div>
+
+@section Scripts {
+    <script>
+        document.addEventListener("DOMContentLoaded", function () {
+            var carouselEl = document.getElementById('carouselExampleDark');
+            if (!carouselEl) return;
+
+            // ensure no stale flags
+            carouselEl.querySelectorAll('.carousel-item').forEach(it => it.classList.remove('start-anim'));
+
+            // trigger first slide after a tiny delay (so CSS transitions can fire)
+            setTimeout(() => {
+                var first = carouselEl.querySelector('.carousel-item.active');
+                if (first) first.classList.add('start-anim');
+            }, 150);
+
+            // reset before sliding
+            carouselEl.addEventListener('slide.bs.carousel', function () {
+                carouselEl.querySelectorAll('.carousel-item').forEach(it => it.classList.remove('start-anim'));
+            });
+
+            // trigger on the new active slide
+            carouselEl.addEventListener('slid.bs.carousel', function () {
+                var active = carouselEl.querySelector('.carousel-item.active');
+                // small timeout helps reliably restart transitions
+                setTimeout(() => { if (active) active.classList.add('start-anim'); }, 50);
+            });
+        });
+    </script>
+
+}

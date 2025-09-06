@@ -23,6 +23,39 @@ namespace goldenoutfitApp.Controllers
             return View();
         }
 
+        public IActionResult SecurityUniforms()
+        {
+            return View();
+        }
+        public IActionResult HotelsUniforms()
+        {
+            return View();
+        }
+        public IActionResult HospitalsUniforms()
+        {
+            return View();
+        }
+        public IActionResult SchoolUniforms()
+        {
+            return View();
+        }
+        public IActionResult SaloonUniforms()
+        {
+            return View();
+        }
+        public IActionResult OfficeStaffUniforms()
+        {
+            return View();
+        }
+        public IActionResult Printing()
+        {
+            return View();
+        }
+        public IActionResult Fabric()
+        {
+            return View();
+        }
+
         [ResponseCache(Duration = 0, Location = ResponseCacheLocation.None, NoStore = true)]
         public IActionResult Error()
         {

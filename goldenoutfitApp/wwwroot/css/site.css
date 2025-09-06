@@ -11,7 +11,9 @@ html {
 .btn:focus, .btn:active:focus, .btn-link.nav-link:focus, .form-control:focus, .form-check-input:focus {
   box-shadow: 0 0 0 0.1rem white, 0 0 0 0.25rem #258cfb;
 }
-
+body {
+    padding-top: 82px;
+}
 html {
   position: relative;
   min-height: 100%;
@@ -88,4 +90,26 @@ a {
     .carousel-caption h5 {
         font-size: 1rem;
     }
+}
+
+
+
+.bg-cover {
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+}
+
+.bg-dark-overlay::before {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: rgba(0,0,0,0.5); /* adjust darkness */
+    z-index: 1;
+}
+
+.bg-dark-overlay > * {
+    position: relative;
+    z-index: 2; /* text stays above overlay */
 }

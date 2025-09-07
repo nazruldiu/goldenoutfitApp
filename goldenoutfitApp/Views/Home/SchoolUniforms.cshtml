@@ -1,5 +1,58 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
+    ViewData["Title"] = "School Uniforms";
 }
+<div class="d-flex flex-column align-items-center justify-content-center text-white bg-cover bg-dark-overlay"
+     style="min-height: 200px; background-image: url('/images/menu.png');">
+
+    <h1 class="font-weight-semi-bold text-uppercase mb-3">School Uniforms</h1>
+    <div class="d-inline-flex">
+        <p class="m-0"><a href="/" class="text-white text-decoration-none">Home</a></p>
+        <p class="m-0 px-2">-</p>
+        <p class="m-0">School Uniforms</p>
+    </div>
+</div>
+<div class="container" style="background-color: #152B55;">
+    <div class="row pt-3">
+        <div class="col-md-6" style="color: #fff">
+            <p>
+                affordably fit to the wide range of school levels from small to bulk quantity order.
+                Customized Uniforms is our expertise, anything from head to toe that requires stitching,
+                embroidery and printing for all levels such as Nursery, Primary, Grade school and High
+                school uniforms.
+            </p>
+            <p>
+                Our school uniforms are designed to provide both comfort and professionalism for students and staff. Made from durable materials, these uniforms ensure that students can focus on their studies while maintaining a polished appearance. Available in various styles and sizes, our school uniforms can be customized with school logos and patches to enhance school identity.
+            </p>
+            <a asp-area="" asp-controller="Home" asp-action="ContactUs" class="btn btn-primary">Contact Us</a>
+        </div>
+        <div class="col-md-6">
+            <img src="~/images/school-1.JPG" class="img-fluid" />
+        </div>
+    </div>
+    <div class="row pt-3 pb-3">
+        <div class="col-md-6">
+            <img src="~/images/school-2.jpg" class="img-fluid" />
+        </div>
+        <div class="col-md-6">
+            <div class="text-center" style="color: #fff">
+                <h2 class="font-weight-semi-bold text-uppercase mb-3">School Uniforms</h2>
+                <p>
+                    School uniforms play a significant role in the overall
+                    presentation and branding of a school. They not only
+                    contribute to the professional appearance of the staff
+                    but also create a positive impression on students and parents.
+                </p>
+                <p>
+                    Uniforms are an essential aspect of school branding and
+                    student experience. They should be well-designed,
+                    comfortable, and reflective of the school's image and
+                    theme. Properly attired staff enhance the overall
+                    ambiance and professionalism of the school, contributing
+                    to a positive student experience.
+                </p>
+                <a asp-area="" asp-controller="Home" asp-action="ContactUs" class="btn btn-primary">Contact Us</a>
+            </div>
+        </div>
+        
+    </div>
+</div>

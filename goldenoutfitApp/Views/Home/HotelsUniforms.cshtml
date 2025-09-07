@@ -1,5 +1,51 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
+    ViewData["Title"] = "Hotels Uniforms";
 }
+<div class="d-flex flex-column align-items-center justify-content-center text-white bg-cover bg-dark-overlay"
+     style="min-height: 200px; background-image: url('/images/menu.png');">
+
+    <h1 class="font-weight-semi-bold text-uppercase mb-3">Hotels Uniforms</h1>
+    <div class="d-inline-flex">
+        <p class="m-0"><a href="/" class="text-white text-decoration-none">Home</a></p>
+        <p class="m-0 px-2">-</p>
+        <p class="m-0">Hotels Uniforms</p>
+    </div>
+</div>
+
+<div class="container" style="background-color: #152B55;">
+    <div class="row pt-3">
+        <div class="col-md-4">
+            <img src="~/images/hotel.jpg" class="img-fluid" />
+        </div>
+        <div class="col-md-8" style="color: #fff">
+            <p>Our hotel uniforms are designed to provide both comfort and professionalism for hotel staff. Made from durable materials, these uniforms ensure that hotel employees can perform their duties effectively while maintaining a polished appearance. Available in various styles and sizes, our hotel uniforms can be customized with company logos and patches to enhance brand identity.</p>
+            <p>Whether you need uniforms for front desk staff, housekeeping, or food service, we offer a range of options to suit your needs. Our collection includes shirts, pants, jackets, and accessories that are functional and stylish. Trust us to equip your hotel team with the best uniforms that combine safety, comfort, and style.</p>
+            <a asp-area="" asp-controller="Home" asp-action="ContactUs" class="btn btn-primary">Contact Us</a>
+        </div>
+    </div>
+    <div class=" row">
+        <div class="col-md-6">
+            <div class="text-center" style="color: #fff">
+                <h2 class="font-weight-semi-bold text-uppercase mb-3">Hotels Uniforms</h2>
+                <p>
+                    Hotel uniforms play a significant role in the overall
+                    presentation and branding of a hotel. They not only
+                    contribute to the professional appearance of the staff
+                    but also create a positive impression on guests
+                </p>
+                <p>
+                    Uniforms are an essential aspect of hotel branding and
+                    guest experience. They should be well-designed,
+                    comfortable, and reflective of the hotel's image and
+                    theme. Properly attired staff enhance the overall
+                    ambiance and professionalism of the hotel, contributing
+                    to a positive guest experience.
+                </p>
+                <a asp-area="" asp-controller="Home" asp-action="ContactUs" class="btn btn-primary">Contact Us</a>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <img src="~/images/hotel-1.JPG" class="img-fluid" />
+        </div>
+    </div>
+</div>

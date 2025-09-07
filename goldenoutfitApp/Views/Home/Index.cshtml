@@ -62,23 +62,6 @@
     .values-list .num-7 {
         color: #00e6e6;
     }
-
-    .about__text {
-        padding-left: 20px;
-        padding-top: 20px;
-    }
-
-    .about__text {
-        padding-left: 20px;
-        padding-top: 20px;
-    }
-
-    .about__text ul li {
-        list-style: none;
-        font-size: 20px;
-        color: #fff;
-        line-height: 50px;
-    }
 </style>
 <div id="carouselExampleDark" class="carousel carousel-dark slide">
     <div class="carousel-indicators">
@@ -94,7 +77,7 @@
                     <div class="d-none d-md-block">
                         <h5>Golden Outfit Corner</h5>
                         <p>We offering a wide range of uniform services.</p>
-                        <a class="btn btn-outline-light btn-lg" href="https://wa.me/971522244964" target="_blank">
+                        <a class="btn btn-outline-light btn-lg" asp-area="" asp-controller="Home" asp-action="ContactUs">
                             Contact Us
                         </a>
                     </div>
@@ -113,7 +96,7 @@
                     <div class="d-none d-md-block">
                         <h5>Golden Outfit Corner</h5>
                         <p>We offering a wide range of uniform services.</p>
-                        <a class="btn btn-outline-light btn-lg" href="https://wa.me/971522244964" target="_blank">
+                        <a class="btn btn-outline-light btn-lg" asp-area="" asp-controller="Home" asp-action="ContactUs">
                             Contact Us
                         </a>
                     </div>
@@ -132,7 +115,7 @@
                     <div class="d-none d-md-block">
                         <h5>Golden Outfit Corner</h5>
                         <p>We offering a wide range of uniform services.</p>
-                        <a class="btn btn-outline-light btn-lg" href="https://wa.me/971522244964" target="_blank">
+                        <a class="btn btn-outline-light btn-lg" asp-area="" asp-controller="Home" asp-action="ContactUs">
                             Contact Us
                         </a>
                     </div>
@@ -178,6 +161,7 @@
                 quality materials and fabrics to ensure that our uniforms
                 are durable, comfortable, and long-lasting.
             </p>
+            <a class="btn btn-primary btn-lg" asp-area="" asp-controller="Home" asp-action="ContactUs">Contact Us</a>
         </div>
     </div>
     <div class="col-md-6">
@@ -228,7 +212,7 @@
                 <li><i class="fa fa-check-circle"></i> Saloon Uniforms</li>
                 <li><i class="fa fa-check-circle"></i> Office Staff Uniforms</li>
             </ul>
-            <a class="btn btn-primary py-md-2 px-md-3 btn-lg" style="color: #fff; margin-left: 42px !important;" href="/ContactUs"><i class="fa fa-check-circle"></i> Contact US</a>
+            <a class="btn btn-primary py-md-2 px-md-3 btn-lg" style="color: #fff; margin-left: 42px !important;" asp-area="" asp-controller="Home" asp-action="ContactUs"><i class="fa fa-check-circle"></i> Contact US</a>
         </div>
     </div>
     <div class="col-md-8">

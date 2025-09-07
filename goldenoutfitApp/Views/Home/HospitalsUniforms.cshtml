@@ -1,5 +1,84 @@
-﻿@*
-    For more information on enabling MVC for empty projects, visit https://go.microsoft.com/fwlink/?LinkID=397860
-*@
-@{
+﻿@{
+    ViewData["Title"] = "Hospitals Uniforms";
 }
+<div class="d-flex flex-column align-items-center justify-content-center text-white bg-cover bg-dark-overlay"
+     style="min-height: 200px; background-image: url('/images/menu.png');">
+
+    <h1 class="font-weight-semi-bold text-uppercase mb-3">Hospitals Uniforms</h1>
+    <div class="d-inline-flex">
+        <p class="m-0"><a href="/" class="text-white text-decoration-none">Home</a></p>
+        <p class="m-0 px-2">-</p>
+        <p class="m-0">Hospitals Uniforms</p>
+    </div>
+</div>
+
+<div class="container">
+    <div class="row pt-3">
+        <div class="col-md-4" style="background-color: #152B55;">
+            <div class="about__text" style="padding-left: 0px;">
+                <ul>
+                    <li style="font-size: 30px;">
+                        <i class="fa fa-check-circle"></i> Nurse Uniforms
+                    </li>
+                    <li style="font-size: 30px;">
+                        <i class="fa fa-check-circle"></i> Doctor's Uniforms
+                    </li>
+                    <li style="font-size: 30px;">
+                        <i class="fa fa-check-circle"></i> Physician Uniforms
+                    </li>
+                    <li style="font-size: 30px;">
+                        <i class="fa fa-check-circle"></i> Medical
+                        Technicians
+                        Assistants
+                        Uniforms
+                    </li>
+                </ul>
+                <a class="btn btn-primary py-md-2 px-md-3 btn-lg" style="color: #fff; margin-left: 42px !important;" asp-area="" asp-controller="Home" asp-action="ContactUs"><i class="fa fa-check-circle"></i> Contact US</a>
+            </div>
+        </div>
+        <div class="col-md-8" style="color: #fff">
+            <img src="~/images/hospital-1.JPG" class="img-fluid" />
+        </div>
+    </div>
+    <div class=" row">
+        <div class="col-md-12">
+            <p style="color: #152B55; font-size: 30px; padding: 10px 0px;">
+                Hospital uniforms are an essential aspect of healthcare
+                facilities, ensuring a professional and hygienic
+                appearance for medical staff.
+            </p>
+        </div>
+        <div class="col-md-4">
+            <img src="~/images/hospital-2.JPG" class="img-fluid" />
+        </div>
+        <div class="col-md-8" style="background-color: #152B55;">
+            <div class="text-center" style="color: #fff">
+                <h2 class="font-weight-semi-bold text-uppercase mb-3">Hotels Uniforms</h2>
+                <p>
+                    Uniforms in hospitals serve not only to
+                    maintain a professional appearance but
+                    also to promote cleanliness and hygiene.
+                    They are often made of breathable and
+                    easy-to-clean materials, ensuring that
+                    healthcare workers can carry out their duties
+                    comfortably while adhering to strict infection
+                    control protocols. Additionally, uniforms help
+                    patients and visitors easily identify different
+                    staff members, fostering clear
+                    communication and trust in the medical
+                    team.
+                </p>
+                <p>
+                    Overall, hospital uniforms play a crucial role
+                    in the healthcare environment, contributing to
+                    both the functionality and professionalism of
+                    medical staff. Properly designed and maintained
+                    uniforms enhance the overall patient experience
+                    and support the vital work carried out by
+                    healthcare professionals.
+                </p>
+                <a asp-area="" asp-controller="Home" asp-action="ContactUs" class="btn btn-primary">Contact Us</a>
+            </div>
+        </div>
+    </div>
+</div>

@@ -11,6 +11,8 @@
     <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
+    <!------ Include the above in your HEAD tag ---------->
+    <link rel="stylesheet" href="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.css" media="screen">
 </head>
 <body>
     <header>
@@ -39,15 +41,20 @@
                                 <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="SchoolUniforms"> School Uniforms </a></li>
                                 <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="SaloonUniforms"> Saloon Uniforms </a></li>
                                 <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="OfficeStaffUniforms"> Office Staff Uniforms </a></li>
+                                <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="kandora"> Kandora </a></li>
                                 <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Printing"> Printing and Embroidery System </a></li>
                                 <li><a class="dropdown-item" asp-area="" asp-controller="Home" asp-action="Fabric"> Premium Quality Fabric </a></li>
                             </ul>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" href="#our_values">Our Values</a>
+                            <a class="nav-link text-dark" asp-controller="Home" asp-action="Index" asp-fragment="our_values">
+                                Our Values
+                            </a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link text-dark" href="#our_clients">Our Valuable Clients</a>
+                            <a class="nav-link text-dark" asp-controller="Home" asp-action="Index" asp-fragment="our_clients">
+                                Our Valuable Clients
+                            </a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="AboutUs">About Us</a>
@@ -96,6 +103,10 @@
                             <a href="" class="text-decoration-none">
                                 <img class="img-fluid w-50 rounded" src="~/images/whatsapp_contact.jpg">
                             </a>
+                            <a href="#" class="mb-0"> We are open: </a>
+                            <a href="#" class="mb-0"> Saturday-Thursday:  9am to 2pm and 4pm to 11.30pm</a>
+                            <a href="#" class="mb-0"> Friday: 4pm to 11pm</a>
+
                         </div>
                     </div>
                     <div b-ermmginw1o="" class="col-md-6 mb-5">
@@ -111,7 +122,6 @@
                             <a class="text-light mb-2" asp-area="" asp-controller="Home" asp-action="Fabric"><i b-ermmginw1o="" class="fa fa-angle-right mr-2"></i> Premium Quality Fabric</a>
                             <a class="text-light mb-2" asp-area="" asp-controller="Home" asp-action="AboutUs"><i b-ermmginw1o="" class="fa fa-angle-right mr-2"></i> About Us</a>
                             <a class="text-light mb-2" asp-area="" asp-controller="Home" asp-action="ContactUs"><i b-ermmginw1o="" class="fa fa-angle-right mr-2"></i> Contact Us</a>
-
                         </div>
                     </div>
                 </div>
@@ -120,11 +130,12 @@
         <div b-ermmginw1o="" class="row border-top border-light mx-xl-5 py-4">
             <div b-ermmginw1o="" class="col-md-8 px-xl-0">
                 <p b-ermmginw1o="" class="mb-md-0 text-center text-md-left text-light">
-                    © <a b-ermmginw1o="" class="text-light font-weight-semi-bold" href="#">GOLDEN OUTFIT CORNER.</a> All Rights Reserved. Designed and developed by +880 1743 875076
+                    © <a b-ermmginw1o="" class="text-light font-weight-semi-bold" href="#">GOLDEN OUTFIT CORNER.</a> All Rights Reserved. 
+                    Designed and developed by <a href="https://wa.me/1743875076" class="mb-1" target="_blank"><i class="fab fa-whatsapp-square"></i> +880 1743 875076</a>
                 </p>
             </div>
             <div b-ermmginw1o="" class="col-md-4 px-xl-0 text-center text-md-right">
-                <img class="img-fluid" src="/theme/img/payments.png" alt="GOLDEN OUTFIT CORNER">
+                <img class="img-fluid w-25 rounded" src="~/images/logo.png" alt="GOLDEN OUTFIT CORNER">
             </div>
         </div>
     </div>
@@ -132,6 +143,8 @@
     <script src="~/lib/jquery/dist/jquery.min.js"></script>
     <script src="~/lib/bootstrap/dist/js/bootstrap.bundle.min.js"></script>
     <script src="~/js/site.js" asp-append-version="true"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/fancybox/2.1.5/jquery.fancybox.min.js"></script>
+
     @await RenderSectionAsync("Scripts", required: false)
 </body>
 </html>

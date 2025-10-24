@@ -1,6 +1,58 @@
 ﻿@{
     ViewData["Title"] = "Hotels Uniforms";
 }
+<style>
+    #demo {
+        height: 100%;
+        position: relative;
+        overflow: hidden;
+    }
+
+
+    .green {
+        background-color: #6fb936;
+    }
+
+    .thumb {
+        margin-bottom: 30px;
+    }
+
+    .page-top {
+        margin-top: 85px;
+    }
+
+
+    img.zoom {
+        width: 100%;
+        height: 200px;
+        border-radius: 5px;
+        object-fit: cover;
+        -webkit-transition: all .3s ease-in-out;
+        -moz-transition: all .3s ease-in-out;
+        -o-transition: all .3s ease-in-out;
+        -ms-transition: all .3s ease-in-out;
+    }
+
+
+    .transition {
+        -webkit-transform: scale(1.2);
+        -moz-transform: scale(1.2);
+        -o-transform: scale(1.2);
+        transform: scale(1.2);
+    }
+
+    .modal-header {
+        border-bottom: none;
+    }
+
+    .modal-title {
+        color: #000;
+    }
+
+    .modal-footer {
+        display: none;
+    }
+</style>
 <div class="d-flex flex-column align-items-center justify-content-center text-white bg-cover bg-dark-overlay"
      style="min-height: 200px; background-image: url('/images/menu.png');">
 
@@ -48,4 +100,73 @@
             <img src="~/images/hotel-1.JPG" class="img-fluid" />
         </div>
     </div>
+
+    <div class="row mt-4">
+
+
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a href="~/images/hotel/apron.jpg" class="fancybox" rel="ligthbox">
+                <img src="~/images/hotel/apron.jpg" class="zoom img-fluid " alt="">
+            </a>
+        </div>
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a href="~/images/hotel/waistcoat.jpeg" class="fancybox" rel="ligthbox">
+                <img src="~/images/hotel/waistcoat.jpeg" class="zoom img-fluid " alt="">
+            </a>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a href="~/images/hotel/waiter.jpg" class="fancybox" rel="ligthbox">
+                <img src="~/images/hotel/waiter.jpg" class="zoom img-fluid " alt="">
+            </a>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a href="~/images/hotel/cap.jpeg" class="fancybox" rel="ligthbox">
+                <img src="~/images/hotel/cap.jpeg" class="zoom img-fluid " alt="">
+            </a>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a href="~/images/hotel/safe.jpeg" class="fancybox" rel="ligthbox">
+                <img src="~/images/hotel/safe.jpeg" class="zoom img-fluid " alt="">
+            </a>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a href="~/images/hotel/Coat.jpg" class="fancybox" rel="ligthbox">
+                <img src="~/images/hotel/Coat.jpg" class="zoom img-fluid " alt="">
+            </a>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a href="~/images/hotel/pant.jpg" class="fancybox" rel="ligthbox">
+                <img src="~/images/hotel/pant.jpg" class="zoom img-fluid " alt="">
+            </a>
+        </div>
+
+        <div class="col-lg-3 col-md-4 col-xs-6 thumb">
+            <a href="~/images/hotel/blaser.jpg" class="fancybox" rel="ligthbox">
+                <img src="~/images/hotel/blaser.jpg" class="zoom img-fluid " alt="">
+            </a>
+        </div>
+    </div>
 </div>
+@section scripts {
+<script>
+    $(document).ready(function(){
+      $(".fancybox").fancybox({
+            openEffect: "none",
+            closeEffect: "none"
+        });
+
+        $(".zoom").hover(function(){
+
+      $(this).addClass('transition');
+     }, function(){
+
+      $(this).removeClass('transition');
+     });
+    });
+</script>
+}

@@ -125,3 +125,27 @@ a {
         color: #fff;
         line-height: 50px;
     }
+
+.custom-label {
+    display: inline-block;
+    background-color: #1a91cf; /* Blue background */
+    color: white; /* White text */
+    padding: 10px 25px 10px 15px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-bottom: 1rem;
+    position: relative;
+}
+
+    /* Right arrow */
+    .custom-label::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        right: -25px; /* Arrow width */
+        width: 0;
+        height: 0;
+        border-top: 25px solid transparent;
+        border-bottom: 32px solid transparent;
+        border-left: 25px solid #1a91cf; /* Same blue color */
+    }
